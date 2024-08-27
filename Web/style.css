@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 150vh;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.stars {
+    position: fixed; 
+    width: 100vw;
+    height: 100vh; 
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat-y;
+    background-size: cover;
+    animation: animStar 50s linear infinite;
+    z-index: -1; 
+}
+
+h1 {
+    font-size: 3em;
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 30px #00e5ff, 0 0 40px #00e5ff;
+    align-items: self-end;
+}
+
+.fadeIn {
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+.app-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    color: #000;
+    margin-top: 20px;
+}
+
+.app-icon img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+
+.app-details {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.download-button {
+    background-color: #00e5ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-button:hover {
+    background-color: #009fcc;
+}
+
+.swiper-container {
+    width: 80%;
+    max-width: 500px;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+}
+
+.swiper-pagination-bullet {
+    background: #000;
+}
+

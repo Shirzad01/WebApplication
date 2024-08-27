@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos & Astronomy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <h1 class="fadeIn">Welcome to the Universe</h1>
+    <section>
+        <h2>About the Universe</h2>
+        <p>The cosmos is vast and full of wonders. From the smallest particles to the largest galaxies, everything in the universe is interconnected.</p>
+    </section>
+
+    <!-- New section for the app presentation -->
+    <div class="app-presentation">
+        <div class="app-icon">
+            <img src="IMG-20240610-WA0048.jpg" alt="App Icon">
+        </div>
+        <div class="app-details">
+            <h1>The Secrets Of Universe</h1>
+            <p>Dive into the cosmos with "The Secrets of Universe." Discover stars, galaxies, and celestial wonders through captivating visuals and intriguing insights.   </p>
+            <button class="download-button">Download</button>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="IMG-20240610-WA0046.jpg" alt="Screenshot 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="IMG-20240610-WA0042.jpg" alt="Screenshot 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="IMG-20240610-WA0041.jpg" alt="Screenshot 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="IMG-20240610-WA0038.jpg" alt="Screenshot 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="IMG-20240610-WA0035.jpg" alt="Screenshot 2">
+                </div>
+                <!-- Add more screenshots as needed -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+        });
+    </script>
+</body>
+</html>
